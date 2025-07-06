@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Weather Forecast</title>
+</head>
+<body>  
+  <main class="container">
+    <section class="left-panel">
+      <div class="search-bar">
+      <input type="search" id="search-ip" placeholder="Search for places..."> 
+      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="current-weather">
+        <div class="icon">
+          <img src="" id="weather-icon">
+        </div>
+        <h1 id="temp"></h1>
+        <h3 id="day"></h3>
+        <hr class="divider">
+        <p id="weather-description"></p>
+      </div>
+    </section>
+
+    <section class="right-panel">
+      
+      <nav class="tab-header-bar">
+        <div class="tab-header">
+          <!-- <button class="active tab">Today</button> -->
+          <button class="active tab">5 Day Forecast</button>
+        </div>
+        <div class="unit-toggle">
+          <button class="unit-btn active-mode" data-unit="metric">°C</button>
+          <button class="unit-btn" data-unit="imperial">°F</button>
+      </div>
+      </nav>
+      
+      <div id="forecast">
+        <div id="forecast-card" class="forecast-card">
+          <div id="forecast-day"></div>
+          <img src="" id="forecast-icon">
+          <div id="forecast-temp"></div>
+        </div>
+      </div>
+      <h3>Today's Highlights</h3>
+      <section class="highlights">
+        
+        <!-- <div class="highlight-card">
+          <h4>UV Index</h4>
+          <p id="uv"></p>
+        </div> -->
+        <div class="highlight-card">
+          <h3>Wind Speed</h3>
+          <p id="wind"></p>
+        </div>
+        <div class="highlight-card">
+          <h3>Humidity</h3>
+          <p id="humidity"></p>
+        </div>
+        <div class="highlight-card">
+          <h3>Visibility</h3>
+          <p id="visibility"></p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
